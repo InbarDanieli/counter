@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom"; import './App.css';
+import { InfoProvider } from "./ContextInfo";
+import HomePage from "./components/home page/HomePage"
+import CounterPage from "./components/counter page/CounterPage"
+import { useState } from "react";
+
 
 function App() {
+const [count, setCount] = useState(10)
+const [counterName, setCounterName] = useState("")
+
+const providerInformation = {
+  count: count, 
+  setCount: (e)=> setCount(e),
+  counterName: counterName, 
+  setCounterName: (e)=> setCounterName(e),
+}
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InfoProvider value={providerInformation}>
+        <Router>
+          <Routes>
+            <Route path='/' element={<HomePage/>}/>
+            <Route path="/counter" element={<CounterPage/>}/>
+          </Routes>
+        </Router>
+      </InfoProvider>
     </div>
   );
 }
