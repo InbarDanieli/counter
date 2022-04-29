@@ -8,6 +8,7 @@ function CounterPage() {
   const { count, counterName } = useContext(InfoContext)
   const [counterApp, setCounterApp] = useState(0)
   const [counterDown, setCounterDown] = useState(count)
+  // eslint-disable-next-line no-unused-vars
   const [checkCounter, setCheckCounter] = useState(false)
 
   function checkAddcounter() {

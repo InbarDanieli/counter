@@ -10,6 +10,7 @@ function HomePage() {
   useEffect(() => {
     setCount(10)
     setCounterName("")
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
