@@ -10,7 +10,7 @@ function HomePage() {
   useEffect(() => {
     setCount(10)
     setCounterName("")
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -18,12 +18,12 @@ function HomePage() {
       <h1>Counter</h1>
       <div className={style.inputContainer}>
         <div>
-          <span>length of your count: </span>
-          <input value={count} onChange={(e) => setCount(e.target.value)} type="number" min={0}></input>
+          <span><b>length of your count: </b></span>
+          <input value={count} onChange={(e) => setCount(e.target.value)} type="number" min={1}></input>
         </div>
         <div>
-          <span>What are you counting?: </span>
-          <input value={counterName} onChange={(e) => setCounterName(e.target.value)} type="text" placeholder='counter name'></input>
+          <span><b>What are you counting?:</b> </span>
+          <input value={counterName} onChange={(e) => setCounterName(e.target.value)} type="text" placeholder='counter name (optional)'></input>
         </div>
       </div>
       <Link className={style.doneButton} to={"./counter"}>
