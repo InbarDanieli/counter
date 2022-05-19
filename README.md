@@ -1,6 +1,6 @@
 # Counter
 Easy and simple counter for everyday needs
-> link for site: [counter website](counter-4u.web.app/)
+> link for site: [counter website](https://counter-4u.web.app/)
 <br/>
 
 ## Running a development environment
