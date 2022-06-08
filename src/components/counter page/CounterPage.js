@@ -43,8 +43,12 @@ function CounterPage() {
         <h4 className={style.SubtitlecounterLeft}>{`${counterDown} ${counterName ? counterName : "Counts"} Left`}</h4>
       </div>
       <div className={style.changeCountButtons}>
-        <button onClick={checkAddcounter}><span>+</span></button>
-        <button onClick={checkSubcounter}><span>-</span></button>
+        <div className={style.countButton}>
+          <button onClick={checkAddcounter}><span>+</span></button>
+        </div>
+        <div className={style.countButton}>
+          <button onClick={checkSubcounter}><span>-</span></button>
+        </div>
       </div>
       <button className={style.resetButton} onClick={resetcounter}>reset</button>
       <Link className={style.previospageButton} to={"/"}>

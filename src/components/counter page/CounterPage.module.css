@@ -51,6 +51,11 @@ margin-bottom: 24px;
   font-size: 90px;
 }
 
+.countButton{
+  width: 104px;
+  height: 104px;
+}
+
 .resetButton{
   border: none;
   background: none;
@@ -86,5 +91,9 @@ margin-bottom: 24px;
     width: 120px;
     height: 120px;
   }
-  
+
+  .countButton{
+    width: 124px;
+    height: 124px;
+  }
 }
