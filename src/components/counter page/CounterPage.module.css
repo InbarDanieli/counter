@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-*{
+* {
   font-family: 'Varela Round', sans-serif;
 }
 
-.TitlesCounter{
+.TitlesCounter {
   font-size: 120%;
   margin: 24px 0;
 }
 
-.TitlesCounter h1, .TitlesCounter h4{
+.TitlesCounter h1, .TitlesCounter h4 {
   margin: 0;
   padding-bottom: 12px;
 }
 
-.TitlesCounter h4{
+.TitlesCounter h4 {
   color: gray;
 }
 
-.changeCountButtons{
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 24px;
-margin-bottom: 24px;
+.changeCountButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
 }
 
 .changeCountButtons button {
@@ -51,12 +51,12 @@ margin-bottom: 24px;
   font-size: 90px;
 }
 
-.countButton{
+.countButton {
   width: 104px;
   height: 104px;
 }
 
-.resetButton{
+.resetButton {
   border: none;
   background: none;
   cursor: pointer;
@@ -64,7 +64,7 @@ margin-bottom: 24px;
   color: rgb(106, 23, 23);
 }
 
-.resetButton:hover{
+.resetButton:hover {
   font-size: 2.1em;
 }
 
@@ -74,7 +74,7 @@ margin-bottom: 24px;
   left: 4px;
 }
 
-.previospageButton button{
+.previospageButton button {
   border: none;
   background: none;
   font-size: 1.3em;
@@ -82,17 +82,17 @@ margin-bottom: 24px;
 }
 
 @media screen and (max-width: 600px) {
-  .changeCountButtons{
+  .changeCountButtons {
     flex-direction: column;
     gap: 12px;
   }
 
-  .changeCountButtons button{
+  .changeCountButtons button {
     width: 120px;
     height: 120px;
   }
 
-  .countButton{
+  .countButton {
     width: 124px;
     height: 124px;
   }
