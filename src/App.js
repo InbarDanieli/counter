@@ -6,12 +6,23 @@ import {
 import { InfoProvider } from "./ContextInfo";
 import HomePage from "./components/home page/HomePage"
 import CounterPage from "./components/counter page/CounterPage"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function App() {
-const [count, setCount] = useState(10)
+const [count, setCount] = useState(getTotalCount())
 const [counterName, setCounterName] = useState("")
+
+function getTotalCount() {
+  if (window.localStorage.getItem("totalCount")) {
+    return parseInt(window.localStorage.getItem("totalCount"))
+  }
+  return 10
+}
+
+useEffect(() => {
+  window.localStorage.setItem("totalCount", count)
+}, [count])
 
 const providerInformation = {
   count: count, 
