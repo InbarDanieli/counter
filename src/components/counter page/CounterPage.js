@@ -16,6 +16,7 @@ function CounterPage() {
     return 0
   }
 
+
   function checkAddcounter() {
     if (counterUp < count) {
       setCounterUp(counterUp + 1)
