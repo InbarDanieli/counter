@@ -10,6 +10,7 @@ function HomePage() {
   useEffect(() => {
     setCount(10)
     setCounterName("")
+    window.localStorage.setItem("CountsLeft", 0)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
