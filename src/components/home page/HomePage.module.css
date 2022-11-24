@@ -25,7 +25,7 @@
   width: calc(100% - 24px - 4px);
 }
 
-.doneButton button {
+.doneButton {
   margin-top: 24px;
   border: none;
   background: none;
